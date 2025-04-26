@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2f2e2e;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay {
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: #2f2e2e;
+  opacity: 0;
+}
+
+header {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    transition: .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+h2,h3,h4,div {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color:white;
+    text-align: center;
+}
+p, a {
+    font-family: 'Roboto';
+    font-weight: 500;
+    color:white;
+    text-align: center;
+}
+p {
+  font-size: 24px;
+}
+h2 {
+  font-size: 42px;
+}
+h3 {
+  font-size: 36px;
+}
+.sotayellow {
+  color: #ceff00;
+}
+.dark {
+  color: black;
+}
+.large {
+  font-size: 72px;
+}
+.mission {
+  margin-top: 120px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+@media screen and (max-width:1206px) {
+  .tbt header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:525px) {
+  .tbt header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:965px) {
+  .tabs a {
+    display: none;
+  }
+}
+
+.topbar {
+    height: auto;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.gradient {
+    height: 10px;
+    background-image: linear-gradient(to right,red,darkblue);
+    width: 100%;
+}
+
+.tabs {
+    height: 50px;
+    background-color: #ceff00;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tabs a {
+    padding: 16px 0px 35px 35px;
+    text-decoration: none;
+}
+
+.tbt {
+    height: 160px;
+    width: 100%;
+    transition: .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.title {
+    width: 65%;
+    height: 100%;
+}
+
+li {
+    width: 150px;
+    height: 24px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+    width: 60%;
+    height:520px;
+    margin-left: 20%;
+    margin-bottom: 200px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+  .mySlides img {
+    height: 100%;
+    width: 100%;
+    /* margin-top: 50%; */
+    object-fit:cover;
+    margin-left: 0;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row {
+    height: 90px;
+    overflow: hidden;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    overflow: hidden;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
