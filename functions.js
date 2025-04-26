@@ -40,6 +40,7 @@ function scrollFunction() {
 }
 window.transitionToPage = function(href) {
   document.querySelector('overlay').style.opacity = 0
+  document.querySelector('overlay').style.height = 0
   setTimeout(function() { 
       window.location.href = href
   }, 300)
@@ -47,4 +48,5 @@ window.transitionToPage = function(href) {
 
 document.addEventListener('DOMContentLoaded', function(event) {
   document.querySelector('overlay').style.opacity = 1
+  document.querySelector('overlay').style.height = "100%"
 })
