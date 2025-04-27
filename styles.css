@@ -10,6 +10,26 @@ body {
     margin: 0;
 }
 
+#main1 {
+  background-image: url("images/join.jpg");
+  background-color: #00000085;
+  background-position: top center;
+  background-attachment:scroll;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+#placeholdersoyoucanscroll{
+  height:100vh
+}
+
+#main1 div {
+  height: 100%;
+  width: 100%;
+  background-color: #00000095;
+  padding-top: 10%;
+}
+
 .overlay {
   z-index: 2;
   position: fixed;
@@ -23,13 +43,36 @@ body {
   margin-top: 0;
   transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   background-color: #2f2e2e;
-  opacity: 0;
+  opacity: 1;
+}
+
+footer {
+  height: auto;
+  background-color: #747474;
+  width: 100% ;
+}
+.contact {
+  height: auto;
+  background-color: #00000000;
+}
+.bottom {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+}
+.bottom div {
+  width: 25%;
+}
+.bottom div p, .bottom div p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 header {
     font-family: 'Roboto';
     font-weight: 800;
-    font-size: 50px;
+    font-size: 3.125em;
     color:white;
     text-align: center;
     transition: .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -62,12 +105,37 @@ h3 {
   color: black;
 }
 .large {
-  font-size: 72px;
+  font-size: 4.5em;
+}
+.faster {
+  transition: .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .mission {
   margin-top: 120px;
   width: 50%;
   margin-left: 25%;
+}
+
+.contact.mc {
+  height: auto;
+  display: flex;
+  padding: 16px;
+  padding-bottom: 0;
+}
+.contact p {
+  margin: 0;
+}
+.contact {
+  padding: 20px;
+}
+.social-link svg, .social-link img {
+  height: 35px;
+  width: 35px;
+  margin: 16px;
+  fill: #fff;
+}
+.social-link {
+  text-decoration: none;
 }
 
 @media screen and (max-width:1206px) {
@@ -83,7 +151,15 @@ h3 {
 }
 
 @media screen and (max-width:965px) {
-  .tabs a {
+
+  .tabs a.lines {
+    display: block;
+  }
+
+  .tabs a.dark {
+    display: none;
+  }
+  .tabs a.sp {
     display: none;
   }
 }
@@ -106,6 +182,10 @@ h3 {
     width: 100%;
 }
 
+/* .tabs a.lines {
+  display: none;
+  color: black;
+} */
 .tabs {
     height: 50px;
     background-color: #ceff00;
@@ -116,6 +196,7 @@ h3 {
 .tabs a {
     padding: 16px 0px 35px 35px;
     text-decoration: none;
+    display:block;
 }
 
 .tbt {
@@ -147,8 +228,8 @@ li {
     align-items: center;
     position: relative;
     margin-top: 25px;
-    width: 60%;
-    height:500px;
+    width: 60vw ;
+    height:60vh;
     margin-left: 20%;
     margin-bottom: 200px;
   }
@@ -192,6 +273,9 @@ li {
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    right: 95%;
   }
   
   /* On hover, add a black background color with a little bit see-through */

@@ -34,19 +34,28 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
     document.getElementById("topbar").style.height = "0px";
+    document.getElementById("tbtext").style.opacity = "0";
   } else {
     document.getElementById("topbar").style.height = "160px";
+    document.getElementById("tbtext").style.opacity = "1";
   }
 }
 window.transitionToPage = function(href) {
-  document.querySelector('overlay').style.opacity = 0
-  document.querySelector('overlay').style.height = 0
+  document.getElementById("overlay").style.height = "100%"
   setTimeout(function() { 
       window.location.href = href
   }, 300)
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  document.querySelector('overlay').style.opacity = 1
-  document.querySelector('overlay').style.height = "100%"
+  document.getElementById("overlay").style.height = 0
 })
+
+document.getElementById("body").onscroll = function myFunction() {  
+  var scrolltotop = document.scrollingElement.scrollTop;
+  var target = document.getElementById("main1");
+  var xvalue = "center";
+  var factor = 0.5;
+  var yvalue = scrolltotop * factor;
+  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+}
