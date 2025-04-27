@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-#main1 {
+.main1 {
   background-image: url("images/join.jpg");
   background-color: #00000085;
   background-position: top center;
@@ -23,7 +23,7 @@ body {
   height:100vh
 }
 
-#main1 div {
+.main1 div {
   height: 100%;
   width: 100%;
   background-color: #00000095;
@@ -115,6 +115,19 @@ h3 {
   width: 50%;
   margin-left: 25%;
 }
+.teamseg {
+  margin-top: 70px;
+  width: 60%;
+  padding: 20px;
+  margin-left: 20%;
+  margin-bottom: 60px;
+}
+.align-left {
+  float: left;
+  padding-left: 16%;
+  width: 100%;
+  text-align: left;
+}
 
 .contact.mc {
   height: auto;
@@ -197,6 +210,7 @@ h3 {
     padding: 16px 0px 35px 35px;
     text-decoration: none;
     display:block;
+    cursor: pointer;
 }
 
 .tbt {

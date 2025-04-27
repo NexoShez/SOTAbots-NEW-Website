@@ -53,9 +53,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 document.getElementById("body").onscroll = function myFunction() {  
   var scrolltotop = document.scrollingElement.scrollTop;
-  var target = document.getElementById("main1");
-  var xvalue = "center";
-  var factor = 0.5;
-  var yvalue = scrolltotop * factor;
-  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+  var targets = document.querySelectorAll(".main1");
+  targets.forEach(element => {
+    var target = element;
+    var xvalue = "center";
+    var factor = 0.5;
+    var yvalue = scrolltotop * factor;
+    target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+  });
 }
