@@ -54,17 +54,30 @@ footer {
   background-color: #00000000;
 }
 .bottom {
-  height: 60px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   background-color: #000;
 }
 .bottom div {
   width: 25%;
+  height: auto;
 }
-.bottom div p, .bottom div p {
-  font-size: 20px;
+.bottom div p {
+  height: 100%;
+  font-size: 16px;
   font-weight: 600;
+  margin: 0;
+  margin-top: 0;
+  padding: 5%;
+}
+.bottom div a {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 header {
@@ -448,16 +461,8 @@ li {
     margin: 6px;
     fill: #fff;
   }
-  .bottom {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #000;
-  }
-  .bottom div {
-    width: 25%;
-  }
-  .bottom div p, .bottom div p {
+  .bottom div p, .bottom div a {
+    height: 100%;
     font-size: 16px;
     font-weight: 600;
   }
