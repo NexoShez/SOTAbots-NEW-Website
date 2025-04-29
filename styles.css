@@ -16,18 +16,16 @@ body {
   background-position: top center;
   background-attachment:scroll;
   background-size: cover;
-  height: 80vh;
+  height: auto;
   width: 100%;
-}
-#placeholdersoyoucanscroll{
-  height:100vh
 }
 
 .main1 div {
   height: 100%;
   width: 100%;
   background-color: #00000095;
-  padding-top: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 .overlay {
@@ -72,7 +70,7 @@ footer {
 header {
     font-family: 'Roboto';
     font-weight: 800;
-    font-size: 3.125em;
+    font-size: 50px;
     color:white;
     text-align: center;
     transition: .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -98,6 +96,11 @@ h2 {
 h3 {
   font-size: 36px;
 }
+.video {
+  width: 50vw;
+  height: 50vh;
+}
+
 .sotayellow {
   color: #ceff00;
 }
@@ -105,7 +108,7 @@ h3 {
   color: black;
 }
 .large {
-  font-size: 4.5em;
+  font-size: 72px;
 }
 .faster {
   transition: .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -123,7 +126,7 @@ h3 {
   margin-bottom: 60px;
 }
 .align-left {
-  float: left;
+  /* float: left; */
   padding-left: 16%;
   width: 100%;
   text-align: left;
@@ -161,6 +164,11 @@ h3 {
   .tbt header {
     font-size: 30px;
   }
+}
+
+.pageactive {
+  text-decoration: underline;
+  font-weight: 900;
 }
 
 @media screen and (max-width:965px) {
@@ -246,6 +254,18 @@ li {
     height:60vh;
     margin-left: 20%;
     margin-bottom: 200px;
+  }
+
+  @media screen and (max-width: 1650px) {
+    .container {
+      height: 30vh;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .container {
+      height: 17vh;
+    }
   }
   
   /* Hide the images by default */
@@ -342,3 +362,93 @@ li {
   .demo:hover {
     opacity: 1;
   }
+  
+
+@media screen and (max-width:500px) {
+  .large {
+    font-size: 42px;
+  }
+  .video {
+    width: 50vw;
+    height: 25vh;
+  }
+  .align-left {
+    padding-left: 12%;
+  }
+  header {
+      font-family: 'Roboto';
+      font-weight: 800;
+      font-size: 36px;
+      color:white;
+      text-align: center;
+      transition: .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  h2,h3,h4,div {
+      font-family: 'Roboto';
+      font-weight: 700;
+      color:white;
+      text-align: center;
+  }
+  p, a {
+      font-family: 'Roboto';
+      font-weight: 500;
+      color:white;
+      text-align: center;
+  }
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .teamseg {
+    margin-top: 70px;
+    width:93%;
+    padding: 20px;
+    margin-left: 3.5%;
+    margin-bottom: 60px;
+  }
+  .main1 {
+    background-image: url("images/join.jpg");
+    background-color: #00000085;
+    background-position: top center;
+    background-attachment:scroll;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  
+  .main1 div {
+    height: 100%;
+    width: 100%;
+    background-color: #00000095;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .teamdiv {
+    padding-top: 2.5%;
+    padding-bottom: 7%;
+  }
+  .social-link svg, .social-link img {
+    height: 32px;
+    width: 32px;
+    margin: 6px;
+    fill: #fff;
+  }
+  .bottom {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+  }
+  .bottom div {
+    width: 25%;
+  }
+  .bottom div p, .bottom div p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

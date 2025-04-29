@@ -29,15 +29,18 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-window.onscroll = function() {scrollFunction()};
+document.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+  // console.log("scrolled");
+  if (document.documentElement.scrollTop > 160 || document.body.scrollTop > 160) {
+    // console.log("disappear");
     document.getElementById("topbar").style.height = "0px";
     document.getElementById("tbtext").style.opacity = "0";
   } else {
     document.getElementById("topbar").style.height = "160px";
     document.getElementById("tbtext").style.opacity = "1";
+    // console.log("appear");
   }
 }
 window.transitionToPage = function(href) {
