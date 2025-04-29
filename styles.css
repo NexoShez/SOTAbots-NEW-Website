@@ -118,12 +118,22 @@ h3 {
   width: 50%;
   margin-left: 25%;
 }
-.teamseg {
+.teamseg, .otheraw {
   margin-top: 70px;
   width: 60%;
   padding: 20px;
   margin-left: 20%;
   margin-bottom: 60px;
+}
+.otheraw {
+  width: 75%;
+  margin-left: 12.5%;
+}
+.otheraw ul li {
+  width: 100%;
+  margin-bottom: 12px;
+  height: max-content;
+  text-align: left;
 }
 .align-left {
   /* float: left; */
@@ -404,7 +414,7 @@ li {
   h3 {
     font-size: 20px;
   }
-  .teamseg {
+  .teamseg, .mission {
     margin-top: 70px;
     width:93%;
     padding: 20px;
