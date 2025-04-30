@@ -131,13 +131,26 @@ h3 {
   width: 50%;
   margin-left: 25%;
 }
-.teamseg, .otheraw {
+.teamseg, .otheraw, .fees {
   margin-top: 70px;
   width: 60%;
   padding: 20px;
   margin-left: 20%;
   margin-bottom: 60px;
 }
+
+.fees div {
+  padding: 12px;
+  width: 30%;
+}
+
+.fees {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .otheraw {
   width: 75%;
   margin-left: 12.5%;
@@ -465,5 +478,17 @@ li {
     height: 100%;
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .fees div {
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .fees {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+    justify-content: space-around;
   }
 }
