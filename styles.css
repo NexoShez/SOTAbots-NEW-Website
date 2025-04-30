@@ -44,6 +44,59 @@ body {
   opacity: 1;
 }
 
+.mobiletb {
+  /* display: none; */
+  z-index: 9999999;
+  position: fixed;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  transition: opacity .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: #0000006c;
+  opacity: 0;
+}
+
+.mtbin {
+  /* display: none; */
+  z-index: 9999999;
+  position: inherit;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  transition: all .7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: #1f1f1f;
+  opacity: 1;
+  border-bottom-right-radius: 240px;
+}
+
+.show {
+  width: 75%;
+}
+
+.mtbin li {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  font-size: 40px;
+  height: auto;
+  padding-left: 12px;
+}
+.mtbin ul {
+  padding-top: 30%;
+  list-style-type: none;
+  display: none;
+}
+
 footer {
   height: auto;
   background-color: #747474;
@@ -205,6 +258,15 @@ h3 {
 .pageactive {
   text-decoration: underline;
   font-weight: 900;
+}
+
+
+.tabs a.lines {
+  display: none;
+  color: black;
+  padding: 0;
+  align-items: center;
+  padding-top: 16px;
 }
 
 @media screen and (max-width:965px) {

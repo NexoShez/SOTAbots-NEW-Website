@@ -65,3 +65,25 @@ document.getElementById("body").onscroll = function myFunction() {
     target.style.backgroundPosition = xvalue + " " + yvalue + "px";
   });
 }
+
+function topbar() {
+  // console.log("triggered");
+  var x = document.getElementById("mtbbg");
+  var y = document.getElementById("mtbin");
+  var li = document.getElementById("mtbli");
+  if (x.style.opacity === "1") {
+    x.style.opacity = 0;
+    x.style.width = 0;
+    li.style.display="none";
+    // x.style.display = "none";
+    y.classList.remove("show");
+    // console.log("gone");
+  } else {
+    x.style.opacity = 1;
+    x.style.width = "100%";
+    li.style.display="block";
+    // x.style.display = "block";
+    y.classList.add("show");
+    // console.log("open");
+  }
+}
