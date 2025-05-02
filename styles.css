@@ -242,6 +242,53 @@ h3 {
 .social-link {
   text-decoration: none;
 }
+.btn {
+  background-color: #ceff00;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  border-radius: 12px;
+  margin: 16px;
+  }
+
+.comps {
+  width: 65%;
+  height: auto;
+  padding: 40px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 6;
+  margin-left: 17.5%;
+}
+.comp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+.comp img {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.comp div {
+  width: 50%;
+}
+.comp div p, .comp div h3 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #fbff00;
+}
 
 @media screen and (max-width:1206px) {
   .tbt header {
@@ -461,8 +508,34 @@ li {
     opacity: 1;
   }
   
+  .calender {
+    border: 0;
+    width: 75%;
+    height: 70vh;
+    margin: 36px 0 36px 0;
+  }
+
+.horizontalsss-theme {
+  padding: 16px; width: 40%; height: auto;
+}
+.verticalsss {
+  width: 75%;  padding: 42px; height: auto;
+}
 
 @media screen and (max-width:500px) {
+  .horizontalsss-theme {
+    padding: 16px; width: 85%; height: auto;
+  }
+  .verticalsss {
+    width: 150%;  padding: 42px; height: auto;
+    margin-left: -25%;
+  }
+  .calender {
+    border: 0;
+    width: 75%;
+    height: 35vh;
+    margin: 36px 0 36px 0;
+  }
   .large {
     font-size: 42px;
   }
@@ -553,4 +626,34 @@ li {
     display: block;
     justify-content: space-around;
   }
+  
+.comps {
+  width: 95%;
+  height: auto;
+  padding: 40px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 6;
+  margin-left: 2.5%;
+}
+.comp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+.comp img {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.comp div {
+  width: 50%;
+}
+.comp div p, .comp div h3 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
 }
