@@ -290,6 +290,15 @@ h3 {
   background-color: #fbff00;
 }
 
+.sponsor {
+  transition: all 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  opacity: 1;
+  padding-top: 30px;
+  width: 30%;
+  height: auto;
+  margin: 16px;
+}
+
 @media screen and (max-width:1206px) {
   .tbt header {
     font-size: 40px;
