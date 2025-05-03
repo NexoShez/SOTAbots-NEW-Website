@@ -65,7 +65,7 @@ body {
 }
 
 .main1 {
-  background-image: url("images/join.jpg");
+  background-image: url("../images/join.jpg");
   background-color: #00000085;
   background-position: top center;
   background-attachment:scroll;
@@ -654,7 +654,7 @@ li {
     margin-bottom: 60px;
   }
   .main1 {
-    background-image: url("images/join.jpg");
+    background-image: url("../images/join.jpg");
     background-color: #00000085;
     background-position: top center;
     background-attachment:scroll;
